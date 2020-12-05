@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "34"
+	"mapversion" "21"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -224,7 +224,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "34"
+	"mapversion" "21"
 	"classname" "worldspawn"
 	"comment" "Decompiled by BSPSource v1.3.24 from sp_a4_finale4"
 	"detailmaterial" "detail/detailsprites"
@@ -66898,6 +66898,21 @@ entity
 		"OnStartTouch" "red_new_spawnSetAsActiveSpawn0-1"
 		"OnStartTouch" "blue_new_spawnSetAsActiveSpawn0-1"
 	}
+}
+entity
+{
+	"id" "2013528"
+	"classname" "trigger_playerteam"
+	"origin" "31.5 -49 96"
+	"spawnflags" "4097"
+	"StartDisabled" "0"
+	"target_team" "0"
+	"trigger_once" "0"
+	connections
+	{
+		"OnStartTouchBluePlayer" "blue_spawn_checkSetValue10-1"
+		"OnStartTouchOrangePlayer" "orange_spawn_checkSetValue10-1"
+	}
 	solid
 	{
 		"id" "2013523"
@@ -81165,7 +81180,7 @@ entity
 	"spawnflags" "4097"
 	"StartDisabled" "0"
 	"target_team" "0"
-	"trigger_once" "1"
+	"trigger_once" "0"
 	connections
 	{
 		"OnStartTouchOrangePlayer" "orange_check_endingSetValue10-1"
@@ -160755,7 +160770,12 @@ entity
 }
 cameras
 {
-	"activecamera" "-1"
+	"activecamera" "0"
+	camera
+	{
+		"position" "[-36.1837 6.9802 527.732]"
+		"look" "[-1284.83 16234.5 -3169.97]"
+	}
 }
 cordons
 {

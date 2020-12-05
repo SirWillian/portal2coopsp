@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "34"
+	"mapversion" "21"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -224,7 +224,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "34"
+	"mapversion" "21"
 	"classname" "worldspawn"
 	"comment" "Decompiled by BSPSource v1.3.24 from sp_a4_finale4"
 	"detailmaterial" "detail/detailsprites"
@@ -66696,7 +66696,7 @@ entity
 {
 	"id" "2013196"
 	"classname" "trigger_playerteam"
-	"origin" "-2 -20 -1392"
+	"origin" "5 -17 -1411.5"
 	"spawnflags" "4097"
 	"StartDisabled" "0"
 	"target_team" "0"
@@ -66715,7 +66715,7 @@ entity
 		side
 		{
 			"id" "10513"
-			"plane" "(-102 -89 -1310) (-102 49 -1310) (98 49 -1310)"
+			"plane" "(-66 -83 -1349) (-66 49 -1349) (76 49 -1349)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -66726,7 +66726,7 @@ entity
 		side
 		{
 			"id" "10512"
-			"plane" "(-102 49 -1474) (-102 -89 -1474) (98 -89 -1474)"
+			"plane" "(-66 49 -1474) (-66 -83 -1474) (76 -83 -1474)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -66737,7 +66737,7 @@ entity
 		side
 		{
 			"id" "10511"
-			"plane" "(-102 -89 -1474) (-102 49 -1474) (-102 49 -1310)"
+			"plane" "(-66 -83 -1474) (-66 49 -1474) (-66 49 -1349)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -66748,7 +66748,7 @@ entity
 		side
 		{
 			"id" "10510"
-			"plane" "(98 49 -1474) (98 -89 -1474) (98 -89 -1310)"
+			"plane" "(76 49 -1474) (76 -83 -1474) (76 -83 -1349)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -66759,7 +66759,7 @@ entity
 		side
 		{
 			"id" "10509"
-			"plane" "(-102 49 -1474) (98 49 -1474) (98 49 -1310)"
+			"plane" "(-66 49 -1474) (76 49 -1474) (76 49 -1349)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -66770,7 +66770,7 @@ entity
 		side
 		{
 			"id" "10508"
-			"plane" "(98 -89 -1474) (-102 -89 -1474) (-102 -89 -1310)"
+			"plane" "(76 -83 -1474) (-66 -83 -1474) (-66 -83 -1349)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -66897,6 +66897,21 @@ entity
 	{
 		"OnStartTouch" "red_new_spawnSetAsActiveSpawn0-1"
 		"OnStartTouch" "blue_new_spawnSetAsActiveSpawn0-1"
+	}
+}
+entity
+{
+	"id" "2013528"
+	"classname" "trigger_playerteam"
+	"origin" "31.5 -49 96"
+	"spawnflags" "4097"
+	"StartDisabled" "0"
+	"target_team" "0"
+	"trigger_once" "0"
+	connections
+	{
+		"OnStartTouchBluePlayer" "blue_spawn_checkSetValue10-1"
+		"OnStartTouchOrangePlayer" "orange_spawn_checkSetValue10-1"
 	}
 	solid
 	{
@@ -81165,7 +81180,7 @@ entity
 	"spawnflags" "4097"
 	"StartDisabled" "0"
 	"target_team" "0"
-	"trigger_once" "1"
+	"trigger_once" "0"
 	connections
 	{
 		"OnStartTouchOrangePlayer" "orange_check_endingSetValue10-1"
@@ -160755,7 +160770,12 @@ entity
 }
 cameras
 {
-	"activecamera" "-1"
+	"activecamera" "0"
+	camera
+	{
+		"position" "[-36.1837 6.9802 527.732]"
+		"look" "[-1284.83 16234.5 -3169.97]"
+	}
 }
 cordons
 {
